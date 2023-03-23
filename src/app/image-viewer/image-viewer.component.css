@@ -1,0 +1,11 @@
+.abs-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    flex-wrap: wrap;
+}
+.picture{
+    width:400px;
+    height:400px;
+}
