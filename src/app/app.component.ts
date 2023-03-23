@@ -45,19 +45,9 @@ export class AppComponent {
     this.imgDiv=true;
     const url = `https://dog.ceo/api/breed/${breed}/images`;
     const response = await fetch(url);
-    const message = await response.json();
-    // this.renderer.setStyle(this.myDiv, 'display', 'none');
-    
+    const message = await response.json();    
     this.dogBreedImages = message.message;
-    // const closeButton = this.renderer.createElement('button');
-    // const buttonContent = this.renderer.createText('Close');
-    // this.renderer.addClass(closeButton, 'close-class');
-    // this.renderer.listen(closeButton, 'click', () => {
-    //   this.close();
-    // });
-    // this.renderer.appendChild(closeButton,buttonContent);
-    // this.renderer.appendChild(this.myImages?.nativeElement,closeButton);
-    // this.showImages();
+    
   }
 
   showImages() {
@@ -70,10 +60,7 @@ export class AppComponent {
   }
 
   close(){
-    // Hide the div
-    // this.renderer.setStyle(this.myImages, 'visibility', 'hidden');
     this.imgDiv=false;
-    // this.renderer.setStyle(this.myDiv, 'display', 'flex');
   }
 
   add() {
